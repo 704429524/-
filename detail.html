@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/detail.css"/>
+    <script src="js/jquery-1.11.3.js"></script>
+</head>
+<body>
+<script src="js/head.js"></script>
+
+<div id="container">
+    <div id="header">
+        <div class="left">
+          <div class="a_img">
+              <ul id="sm_img">
+                  <li><img src="image/ml574ujd_nb_02_i.jfif"  data-md="image/newbalance1.jpg" data-lg="image/lg-1.png" alt=""/></li>
+                  <li><img src="image/ml574ujd_nb_03_i.jfif" data-md="image/md-2.png" data-lg="image/lg-2.png" alt=""/></li>
+                  <li><img src="image/ml574ujd_nb_04_i.jfif" data-md="image/md-3.png" data-lg="image/lg-3.png" alt=""/></li>
+                  <li><img src="image/ml574ujd_nb_06_i.jfif" data-md="image/md-4.png" data-lg="image/lg-4.png" alt=""/></li>
+                  <li><img src="image/ml574ujd_nb_07_i.jfif" data-md="image/md-5.png" data-lg="image/lg-5.png" alt=""/></li>
+              </ul>
+          </div>
+
+            <div class="a_hover">
+                <img src="image/newbalance1.jpg" alt="">
+                <div id="mmask"></div>
+                <div id="mask"></div>
+            </div>
+
+            <div id="lg">
+
+            </div>
+        </div>
+
+        <div class="right">
+            <h1>574系列男女同款复古休闲运动鞋 经典复古 <br/>避震舒适 </h1>
+            <h3>￥699.00</h3>
+            <p>颜色：<b>米色/灰色/藏青</b></p>
+             <p>
+                 <img src="image/color.PNG" alt=""/>
+             </p>
+            <p>尺码：<b>选择 尺码</b></p>
+
+            <ul>
+                <li><span>36.5</span></li>
+                <li><span>37</span></li>
+                <li><span>37.5</span></li>
+                <li><span>38</span></li>
+                <li><span>38.5</span></li>
+                <li><span>39</span></li>
+            </ul>
+
+            <ul>
+                <li><span>39.5</span></li>
+                <li><span>40</span></li>
+                <li><span>40.5</span></li>
+                <li><span>41</span></li>
+                <li><span>41.5</span></li>
+                <li><span>42</span></li>
+            </ul>
+
+            <p>宽度: <b>标准鞋宽(D)</b></p>
+            <p> <d><img src="image/bx.PNG" alt=""/></d> <b>尺码 & 宽度</b></p>
+
+            <p class="add">
+                <span id="a_sub">-</span>
+                <span id="a_add">+</span>
+           </p>
+            <p class="count">
+                <span>数量 <h6><input type="text" value="1" id="a_count"></h6></span>
+            </p>
+            <p>
+                <button class="jiaru">  加入购物车 <b>&nbsp;<img src="image/sp.PNG" alt=""/></b></button>
+                <button>立即购买 <b>&nbsp;<img src="image/sp2.PNG" alt=""/></b></button>
+            </p>
+        </div>
+    </div>
+
+    <div class="detail_top">
+        <h5>经典复古 避震舒适 <b>分享到</b></h5>
+        <h5>鞋子 中性款</h5>
+        <p><a href=""> 返回到 中性款</a></p>
+    </div>
+
+     <div class="detail_bottom">
+          <h3>产品详情</h3>
+         <p>延续574classic魅力风格，配色经典复古；搭载ENCAP避震中底，脚感舒适。</p>
+         <ul>
+             <li>货号：ML574UJD</li>
+             <li>上市时间：2019年春季</li>
+             <li>产地：越南</li>
+             <li>帮面材质：牛剖层革+织物</li>
+             <li>品名：男/女运动鞋</li>
+             <li>规格：22cm~30cm</li>
+             <li>等级：合格品</li>
+             <li>ENCAP避震中底</li>
+         </ul>
+         <h4>您可能喜欢：</h4>
+
+         <div class="detail_ph">
+             <div class="ph_1">
+             <img src="image/detail.jpg" alt=""/>
+             <p>中性款210系列滑板鞋</p>
+             <p>￥499</p>
+             <p><a href="">点击购买</a></p>
+             </div>
+
+             <div class="ph_1">
+                 <img src="image/detail.jpg" alt=""/>
+                 <p>中性款210系列滑板鞋</p>
+                 <p>￥499</p>
+                 <p><a href="">点击购买</a></p>
+             </div>
+
+             <div class="ph_1">
+                 <img src="image/detail.jpg" alt=""/>
+                 <p>中性款210系列滑板鞋</p>
+                 <p>￥499</p>
+                 <p><a href="">点击购买</a></p>
+             </div>
+
+             <div class="ph_1">
+                 <img src="image/detail.jpg" alt=""/>
+                 <p>中性款210系列滑板鞋</p>
+                 <p>￥499</p>
+                 <p><a href="">点击购买</a></p>
+             </div>
+         </div>
+
+
+     </div>
+</div>
+
+
+<script src="js/foot.js"></script>
+
+<script>
+    var  sm_img=$("#sm_img");
+    var  md_img=$(".a_hover>img");
+    var  lg_img=$("#lg");
+    var mmask=$("#mmask");
+    var mask=$("#mask");
+   sm_img.on("mouseover","img",function(){
+       console.log(this.dataset)
+    md_img.attr("src",this.dataset.md)
+    lg_img.css("background-image",`url(${this.dataset.lg})`)
+   })
+mmask.mouseover(function(){
+     lg_img.css("display","block");
+     mask.css("display","block");
+})
+mmask.mouseleave(function(){
+     lg_img.css("display","none");
+     mask.css("display","none");
+   })
+mmask.mousemove(function(e){
+    console.log(e.pageX,e.pageY)
+    if(e.pageX<305){
+       e.pageX=305
+     }else if(e.pageX>800){
+       e.pageX=800
+     }
+     if(e.pageY<185){
+       e.pageY=185
+     }else if(e.pageY>545){
+       e.pageY=545   
+     }
+mask.css("left",e.pageX-315)
+mask.css("top",e.pageY-185);
+lg_img.css("background-position",`${-1*(e.pageX-415)}px ${-1*(e.pageY-185)}px`)
+})
+
+var a_sub=$("#a_sub");
+var a_add=$("#a_add");
+var a_count=$("#a_count")
+
+a_add.click(function(){
+ var n=a_count.val()
+ n++;
+a_count.val(n)
+})
+
+a_sub.click(function(){
+    var m=a_count.val()
+    m--;
+    if(m<1){m=1 }
+    console.log(m)
+    a_count.val(m)
+})
+
+$(".jiaru").click(function(){
+    　window.location.href="shop.html";
+})
+</script>
+</body>
+</html>
